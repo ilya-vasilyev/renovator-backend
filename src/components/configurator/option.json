@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_configurator_options",
+  "info": {
+    "displayName": "Option",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "geometry_name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "controls": {
+      "type": "component",
+      "repeatable": true,
+      "component": "configurator.sub-control"
+    }
+  }
+}

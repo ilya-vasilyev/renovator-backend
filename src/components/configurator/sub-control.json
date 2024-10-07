@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_configurator_sub_controls",
+  "info": {
+    "displayName": "sub-control",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "buttons",
+        "select",
+        "radio"
+      ]
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "configurator.sub-option"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_configurator_sub_options",
+  "info": {
+    "displayName": "sub-option",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "geometry_name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

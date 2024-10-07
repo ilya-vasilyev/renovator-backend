@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_configurator_controls",
+  "info": {
+    "displayName": "Control",
+    "icon": "cursor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "buttons",
+        "select",
+        "radio"
+      ]
+    },
+    "belongs_to_group": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "configurator.option"
+    }
+  }
+}

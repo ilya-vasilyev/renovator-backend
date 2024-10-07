@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_configurator_groups",
+  "info": {
+    "displayName": "Group",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "group_name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "group_description": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

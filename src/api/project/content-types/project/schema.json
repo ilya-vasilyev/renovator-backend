@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "sketchfab_id": {
+      "type": "string",
+      "required": true
+    },
+    "show_price": {
+      "type": "boolean",
+      "default": false
+    },
+    "base_price": {
+      "type": "decimal",
+      "min": 0
+    },
+    "controls": {
+      "type": "component",
+      "repeatable": true,
+      "component": "configurator.control"
+    },
+    "group_list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "configurator.group"
+    }
+  }
+}
