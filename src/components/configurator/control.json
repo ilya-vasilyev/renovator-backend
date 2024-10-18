@@ -12,11 +12,7 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "buttons",
-        "select",
-        "radio"
-      ]
+      "enum": ["buttons", "select", "radio"]
     },
     "belongs_to_group": {
       "type": "string"
