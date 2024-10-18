@@ -5,10 +5,11 @@ export interface ConfiguratorSubOption extends Struct.ComponentSchema {
   info: {
     displayName: 'sub-option';
     icon: 'collapse';
+    description: '';
   };
   attributes: {
     name: Schema.Attribute.String;
-    geometry_name: Schema.Attribute.String;
+    geometry_name: Schema.Attribute.Text;
     price: Schema.Attribute.Integer;
   };
 }
@@ -32,10 +33,11 @@ export interface ConfiguratorOption extends Struct.ComponentSchema {
   info: {
     displayName: 'Option';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     name: Schema.Attribute.String;
-    geometry_name: Schema.Attribute.String;
+    geometry_name: Schema.Attribute.Text;
     price: Schema.Attribute.Integer;
     controls: Schema.Attribute.Component<'configurator.sub-control', true>;
   };
