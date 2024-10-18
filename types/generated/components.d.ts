@@ -11,6 +11,7 @@ export interface ConfiguratorSubOption extends Struct.ComponentSchema {
     name: Schema.Attribute.String;
     geometry_name: Schema.Attribute.Text;
     price: Schema.Attribute.Integer;
+    metrics: Schema.Attribute.JSON;
   };
 }
 
@@ -40,6 +41,7 @@ export interface ConfiguratorOption extends Struct.ComponentSchema {
     geometry_name: Schema.Attribute.Text;
     price: Schema.Attribute.Integer;
     controls: Schema.Attribute.Component<'configurator.sub-control', true>;
+    metrics: Schema.Attribute.JSON;
   };
 }
 

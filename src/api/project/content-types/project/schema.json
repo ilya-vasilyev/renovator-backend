@@ -44,6 +44,13 @@
       "type": "component",
       "repeatable": true,
       "component": "configurator.group"
+    },
+    "show_metrics": {
+      "type": "boolean",
+      "default": false
+    },
+    "metrics_definitions": {
+      "type": "json"
     }
   }
 }
