@@ -34,11 +34,11 @@ Consists of two parts:
 
 Deploy full stack (frontend + backend) on Railway
 
-**`<Railway Button>`**
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
 
-Or deploy only the bakcend
+Or deploy only the backend
 
-**`<Railway Button>`**
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
 
 If you want to deploy it on your own hosting, use Docker. `Dockerfile` and `docker-compose.yml` are provided.
 
