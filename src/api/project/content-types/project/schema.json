@@ -24,6 +24,9 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "string"
+    },
     "show_price": {
       "type": "boolean",
       "default": false
@@ -41,9 +44,6 @@
       "type": "component",
       "repeatable": true,
       "component": "configurator.group"
-    },
-    "description": {
-      "type": "string"
     }
   }
 }

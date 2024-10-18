@@ -15,6 +15,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     slug: Schema.Attribute.UID<'name'>;
     sketchfab_id: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.String;
     show_price: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     base_price: Schema.Attribute.Decimal &
       Schema.Attribute.SetMinMax<
@@ -25,7 +26,6 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       >;
     controls: Schema.Attribute.Component<'configurator.control', true>;
     group_list: Schema.Attribute.Component<'configurator.group', true>;
-    description: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
