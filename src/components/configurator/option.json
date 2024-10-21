@@ -13,9 +13,6 @@
     "geometry_name": {
       "type": "text"
     },
-    "price": {
-      "type": "integer"
-    },
     "controls": {
       "type": "component",
       "repeatable": true,

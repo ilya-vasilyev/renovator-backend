@@ -27,14 +27,6 @@
     "description": {
       "type": "string"
     },
-    "show_price": {
-      "type": "boolean",
-      "default": false
-    },
-    "base_price": {
-      "type": "decimal",
-      "min": 0
-    },
     "controls": {
       "type": "component",
       "repeatable": true,
