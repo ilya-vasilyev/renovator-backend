@@ -13,13 +13,13 @@
     "geometry_name": {
       "type": "text"
     },
-    "price": {
-      "type": "integer"
-    },
     "controls": {
       "type": "component",
       "repeatable": true,
       "component": "configurator.sub-control"
+    },
+    "metrics": {
+      "type": "json"
     }
   }
 }

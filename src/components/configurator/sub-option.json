@@ -13,8 +13,8 @@
     "geometry_name": {
       "type": "text"
     },
-    "price": {
-      "type": "integer"
+    "metrics": {
+      "type": "json"
     }
   }
 }

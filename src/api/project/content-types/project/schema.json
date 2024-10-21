@@ -27,14 +27,6 @@
     "description": {
       "type": "string"
     },
-    "show_price": {
-      "type": "boolean",
-      "default": false
-    },
-    "base_price": {
-      "type": "decimal",
-      "min": 0
-    },
     "controls": {
       "type": "component",
       "repeatable": true,
@@ -44,6 +36,13 @@
       "type": "component",
       "repeatable": true,
       "component": "configurator.group"
+    },
+    "show_metrics": {
+      "type": "boolean",
+      "default": false
+    },
+    "metrics_definitions": {
+      "type": "json"
     }
   }
 }

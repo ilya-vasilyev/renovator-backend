@@ -525,16 +525,10 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'name'>;
     sketchfab_id: Schema.Attribute.String & Schema.Attribute.Required;
     description: Schema.Attribute.String;
-    show_price: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    base_price: Schema.Attribute.Decimal &
-      Schema.Attribute.SetMinMax<
-        {
-          min: 0;
-        },
-        number
-      >;
     controls: Schema.Attribute.Component<'configurator.control', true>;
     group_list: Schema.Attribute.Component<'configurator.group', true>;
+    show_metrics: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    metrics_definitions: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
