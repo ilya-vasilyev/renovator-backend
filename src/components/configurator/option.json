@@ -13,13 +13,16 @@
     "geometry_name": {
       "type": "text"
     },
-    "price": {
-      "type": "integer"
+    "material_assignments": {
+      "type": "json"
     },
     "controls": {
       "type": "component",
       "repeatable": true,
       "component": "configurator.sub-control"
+    },
+    "metrics": {
+      "type": "json"
     }
   }
 }

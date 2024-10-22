@@ -13,8 +13,11 @@
     "geometry_name": {
       "type": "text"
     },
-    "price": {
-      "type": "integer"
+    "material_assignments": {
+      "type": "json"
+    },
+    "metrics": {
+      "type": "json"
     }
   }
 }
