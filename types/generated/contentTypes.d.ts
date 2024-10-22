@@ -535,6 +535,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       >;
     controls: Schema.Attribute.Component<'configurator.control', true>;
     group_list: Schema.Attribute.Component<'configurator.group', true>;
+    show_welcome_tab: Schema.Attribute.Boolean;
+    welcome_content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
