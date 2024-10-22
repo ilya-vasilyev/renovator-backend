@@ -37,6 +37,12 @@
       "repeatable": true,
       "component": "configurator.group"
     },
+    "show_welcome_tab": {
+      "type": "boolean"
+    },
+    "welcome_content": {
+      "type": "richtext"
+    },
     "show_metrics": {
       "type": "boolean",
       "default": false
