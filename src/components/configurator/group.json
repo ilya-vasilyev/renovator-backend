@@ -2,7 +2,8 @@
   "collectionName": "components_configurator_groups",
   "info": {
     "displayName": "Group",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,6 +15,9 @@
     "group_description": {
       "type": "string",
       "required": false
+    },
+    "group_icon": {
+      "type": "string"
     }
   }
 }

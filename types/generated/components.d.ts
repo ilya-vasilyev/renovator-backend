@@ -50,10 +50,12 @@ export interface ConfiguratorGroup extends Struct.ComponentSchema {
   info: {
     displayName: 'Group';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     group_name: Schema.Attribute.String & Schema.Attribute.Required;
     group_description: Schema.Attribute.String;
+    group_icon: Schema.Attribute.String;
   };
 }
 
