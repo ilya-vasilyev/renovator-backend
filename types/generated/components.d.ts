@@ -10,6 +10,7 @@ export interface ConfiguratorSubOption extends Struct.ComponentSchema {
   attributes: {
     name: Schema.Attribute.String;
     geometry_name: Schema.Attribute.Text;
+    material_assignments: Schema.Attribute.JSON;
     metrics: Schema.Attribute.JSON;
   };
 }
@@ -38,6 +39,7 @@ export interface ConfiguratorOption extends Struct.ComponentSchema {
   attributes: {
     name: Schema.Attribute.String;
     geometry_name: Schema.Attribute.Text;
+    material_assignments: Schema.Attribute.JSON;
     controls: Schema.Attribute.Component<'configurator.sub-control', true>;
     metrics: Schema.Attribute.JSON;
   };

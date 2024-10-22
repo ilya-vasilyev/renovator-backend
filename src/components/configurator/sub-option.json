@@ -13,6 +13,9 @@
     "geometry_name": {
       "type": "text"
     },
+    "material_assignments": {
+      "type": "json"
+    },
     "metrics": {
       "type": "json"
     }
