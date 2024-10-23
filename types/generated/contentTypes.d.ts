@@ -491,12 +491,65 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     singularName: 'global';
     pluralName: 'globals';
     displayName: 'Global';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     configurator_name: Schema.Attribute.String;
+    primary_color_light: Schema.Attribute.Enumeration<
+      [
+        'Red',
+        'Orange',
+        'Amber',
+        'Yellow',
+        'Lime',
+        'Green',
+        'Emerald',
+        'Teal',
+        'Cyan',
+        'Sky',
+        'Blue',
+        'Indigo',
+        'Violet',
+        'Purple',
+        'Fuchsia',
+        'Pink',
+        'Rose',
+      ]
+    > &
+      Schema.Attribute.DefaultTo<'Emerald'>;
+    gray_tone_light: Schema.Attribute.Enumeration<
+      ['Slate', 'Cool', 'Zinc', 'Neutral', 'Stone']
+    > &
+      Schema.Attribute.DefaultTo<'Cool'>;
+    primary_color_dark: Schema.Attribute.Enumeration<
+      [
+        'Red',
+        'Orange',
+        'Amber',
+        'Yellow',
+        'Lime',
+        'Green',
+        'Emerald',
+        'Teal',
+        'Cyan',
+        'Sky',
+        'Blue',
+        'Indigo',
+        'Violet',
+        'Purple',
+        'Fuchsia',
+        'Pink',
+        'Rose',
+      ]
+    > &
+      Schema.Attribute.DefaultTo<'Violet'>;
+    gray_tone_dark: Schema.Attribute.Enumeration<
+      ['Slate', 'Cool', 'Zinc', 'Neutral', 'Stone']
+    > &
+      Schema.Attribute.DefaultTo<'Neutral'>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "global",
     "pluralName": "globals",
-    "displayName": "Global"
+    "displayName": "Global",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,74 @@
   "attributes": {
     "configurator_name": {
       "type": "string"
+    },
+    "primary_color_light": {
+      "type": "enumeration",
+      "enum": [
+        "Red",
+        "Orange",
+        "Amber",
+        "Yellow",
+        "Lime",
+        "Green",
+        "Emerald",
+        "Teal",
+        "Cyan",
+        "Sky",
+        "Blue",
+        "Indigo",
+        "Violet",
+        "Purple",
+        "Fuchsia",
+        "Pink",
+        "Rose"
+      ],
+      "default": "Emerald"
+    },
+    "gray_tone_light": {
+      "type": "enumeration",
+      "enum": [
+        "Slate",
+        "Cool",
+        "Zinc",
+        "Neutral",
+        "Stone"
+      ],
+      "default": "Cool"
+    },
+    "primary_color_dark": {
+      "type": "enumeration",
+      "enum": [
+        "Red",
+        "Orange",
+        "Amber",
+        "Yellow",
+        "Lime",
+        "Green",
+        "Emerald",
+        "Teal",
+        "Cyan",
+        "Sky",
+        "Blue",
+        "Indigo",
+        "Violet",
+        "Purple",
+        "Fuchsia",
+        "Pink",
+        "Rose"
+      ],
+      "default": "Violet"
+    },
+    "gray_tone_dark": {
+      "type": "enumeration",
+      "enum": [
+        "Slate",
+        "Cool",
+        "Zinc",
+        "Neutral",
+        "Stone"
+      ],
+      "default": "Neutral"
     }
   }
 }
