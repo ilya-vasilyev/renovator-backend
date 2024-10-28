@@ -5,7 +5,7 @@
     "singularName": "project",
     "pluralName": "projects",
     "displayName": "Project",
-    "description": ""
+    "description": "description"
   },
   "options": {
     "draftAndPublish": true
