@@ -550,6 +550,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
       ['Slate', 'Cool', 'Zinc', 'Neutral', 'Stone']
     > &
       Schema.Attribute.DefaultTo<'Neutral'>;
+    logo: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
@@ -568,7 +569,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     singularName: 'project';
     pluralName: 'projects';
     displayName: 'Project';
-    description: '';
+    description: 'description';
   };
   options: {
     draftAndPublish: true;
