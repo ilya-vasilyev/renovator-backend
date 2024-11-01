@@ -15,7 +15,8 @@
       "enum": [
         "buttons",
         "select",
-        "radio"
+        "radio",
+        "gallery"
       ]
     },
     "belongs_to_group": {

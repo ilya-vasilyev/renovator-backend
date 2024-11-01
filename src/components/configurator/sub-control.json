@@ -15,7 +15,8 @@
       "enum": [
         "buttons",
         "select",
-        "radio"
+        "radio",
+        "gallery"
       ]
     },
     "options": {
