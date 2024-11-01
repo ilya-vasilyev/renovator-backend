@@ -12,7 +12,11 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": ["buttons", "select", "radio"]
+      "enum": [
+        "buttons",
+        "select",
+        "radio"
+      ]
     },
     "options": {
       "type": "component",
