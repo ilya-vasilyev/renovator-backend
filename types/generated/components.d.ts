@@ -12,6 +12,7 @@ export interface ConfiguratorSubOption extends Struct.ComponentSchema {
     geometry_name: Schema.Attribute.Text;
     material_assignments: Schema.Attribute.JSON;
     metrics: Schema.Attribute.JSON;
+    image: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -42,6 +43,7 @@ export interface ConfiguratorOption extends Struct.ComponentSchema {
     material_assignments: Schema.Attribute.JSON;
     controls: Schema.Attribute.Component<'configurator.sub-control', true>;
     metrics: Schema.Attribute.JSON;
+    image: Schema.Attribute.Media<'images'>;
   };
 }
 
