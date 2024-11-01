@@ -25,6 +25,9 @@
       "type": "component",
       "repeatable": true,
       "component": "configurator.option"
+    },
+    "camera_view": {
+      "type": "json"
     }
   }
 }

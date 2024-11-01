@@ -27,6 +27,7 @@ export interface ConfiguratorSubControl extends Struct.ComponentSchema {
     name: Schema.Attribute.String;
     type: Schema.Attribute.Enumeration<['buttons', 'select', 'radio']>;
     options: Schema.Attribute.Component<'configurator.sub-option', true>;
+    camera_view: Schema.Attribute.JSON;
   };
 }
 
@@ -73,6 +74,7 @@ export interface ConfiguratorControl extends Struct.ComponentSchema {
     type: Schema.Attribute.Enumeration<['buttons', 'select', 'radio']>;
     belongs_to_group: Schema.Attribute.String;
     options: Schema.Attribute.Component<'configurator.option', true>;
+    camera_view: Schema.Attribute.JSON;
   };
 }
 
