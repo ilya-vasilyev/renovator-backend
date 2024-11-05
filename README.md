@@ -1,6 +1,6 @@
 # Renovator (Strapi backend)
 
-**`<IMG GOES HERE>`**
+![image](https://github.com/user-attachments/assets/c685cc7c-f67a-4cbb-894e-cfeaa6bf488f)
 
 An open-source web configurator tool for renovation projects.
 
@@ -12,14 +12,15 @@ NOTE: This project is using Strapi v5.
 
 Consists of two parts:
 
-- Frontend (**`<URL GOES HERE>`**)
-- Backend (this repository)
+- [Frontend](https://github.com/ilya-vasilyev/renovator-frontend)
+- **Backend** _(this repository)_
 
 ### Tech stack
 
 - Strapi v5
 - Postgres
 - Docker
+- Cloudinary
 
 **How to start this app?**
 
@@ -34,11 +35,11 @@ Consists of two parts:
 
 Deploy full stack (frontend + backend) on Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/mNpqga)
 
 Or deploy only the backend
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/gb__Er)
 
 If you want to deploy it on your own hosting, use Docker. `Dockerfile` and `docker-compose.yml` are provided.
 
@@ -63,9 +64,17 @@ This project needs the following environment variables to run properly:
 - **`DATABASE_PASSWORD`** - default is `strapi_password`
 - **`DATABASE_SSL`** - default is `false`
 
+To use Cloudinary for media uploads also add:
+- **`CLOUDINARY_NAME`**
+- **`CLOUDINARY_KEY`**
+- **`CLOUDINARY_SECRET`**
+
 ### Creating admin user
+When you run the service for the first time you need to claim your first admin user, visit `/admin`
 
 ### Giving permission to the Public Role
+API should be configured to be publicly available.
+In Strapi open `Settings` > `Users & Permissions plugin` > `Roles` > `Public (edit button)`, then enable **find** checkbox for `Global`, then **find** and **findOne** checkbox for `Project`.
 
 ### Using Docker in production
 
