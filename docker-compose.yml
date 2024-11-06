@@ -17,13 +17,13 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       NODE_ENV: ${NODE_ENV}
     volumes:
-      - ./config:/opt/app/config
-      - ./src:/opt/app/src
-      - ./package.json:/opt/package.json
-      - ./package-lock.json:/opt/package-lock.json
+      - ./config:/app/config
+      - ./src:/app/src
+      - ./package.json:/package.json
+      - ./package-lock.json:/package-lock.json
 
-      - ./.env:/opt/app/.env
-      - ./public/uploads:/opt/app/public/uploads
+      - ./.env:/app/.env
+      - ./public/uploads:/app/public/uploads
     ports:
       - '1337:1337'
     networks:

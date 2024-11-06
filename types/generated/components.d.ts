@@ -12,6 +12,7 @@ export interface ConfiguratorSubOption extends Struct.ComponentSchema {
     geometry_name: Schema.Attribute.Text;
     material_assignments: Schema.Attribute.JSON;
     metrics: Schema.Attribute.JSON;
+    image: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -24,8 +25,11 @@ export interface ConfiguratorSubControl extends Struct.ComponentSchema {
   };
   attributes: {
     name: Schema.Attribute.String;
-    type: Schema.Attribute.Enumeration<['buttons', 'select', 'radio']>;
+    type: Schema.Attribute.Enumeration<
+      ['buttons', 'select', 'radio', 'gallery']
+    >;
     options: Schema.Attribute.Component<'configurator.sub-option', true>;
+    camera_view: Schema.Attribute.JSON;
   };
 }
 
@@ -42,6 +46,7 @@ export interface ConfiguratorOption extends Struct.ComponentSchema {
     material_assignments: Schema.Attribute.JSON;
     controls: Schema.Attribute.Component<'configurator.sub-control', true>;
     metrics: Schema.Attribute.JSON;
+    image: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -68,9 +73,12 @@ export interface ConfiguratorControl extends Struct.ComponentSchema {
   };
   attributes: {
     name: Schema.Attribute.String;
-    type: Schema.Attribute.Enumeration<['buttons', 'select', 'radio']>;
+    type: Schema.Attribute.Enumeration<
+      ['buttons', 'select', 'radio', 'gallery']
+    >;
     belongs_to_group: Schema.Attribute.String;
     options: Schema.Attribute.Component<'configurator.option', true>;
+    camera_view: Schema.Attribute.JSON;
   };
 }
 

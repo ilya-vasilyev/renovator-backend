@@ -12,12 +12,20 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": ["buttons", "select", "radio"]
+      "enum": [
+        "buttons",
+        "select",
+        "radio",
+        "gallery"
+      ]
     },
     "options": {
       "type": "component",
       "repeatable": true,
       "component": "configurator.sub-option"
+    },
+    "camera_view": {
+      "type": "json"
     }
   }
 }
